@@ -45,18 +45,18 @@
  * #define the features implmented in that release.
 */
 
-#if __cplusplus == 201103L 
+#if __cplusplus >= 201103L
 // base version, future releases of this file will 
 // #define these variables as features as they are implemented 
 
 /* Code in this delivery use the following variables to control compilation
 
    Variable tests           C++ 11 Feature 
-HEX_MANIPS               hexfloat and defaultfloat manipulators
-REFMEMS                  reference qualified member functions
-REGEX                    regular expressions library
-STRING_NUMERIC_CONVS     conversions to and from string to numeric
 */
+#define HEX_MANIPS               // hexfloat and defaultfloat manipulators
+#define REFMEMS                  // reference qualified member functions
+#define REGEX                    // regular expressions library
+#define STRING_NUMERIC_CONVS     // conversions to and from string to numeric
 #endif  // ends compiler version check
 
 #ifndef STRING_NUMERIC_CONVS
